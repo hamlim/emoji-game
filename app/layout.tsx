@@ -5,10 +5,8 @@ export default function Layout({ children }) {
   return (
     <html lang="en-US" data-theme="winter">
       <body>
-        <main className="min-h-screen">
-          <header></header>
-          <section>{children}</section>
-          <footer></footer>
+        <main className="min-h-screen min-w-[100vw] flex  bg-slate-300 items-center justify-center">
+          {children}
         </main>
       </body>
     </html>
@@ -16,7 +14,7 @@ export default function Layout({ children }) {
 }
 
 export let metadata: Metadata = {
-  title: 'Template Next App',
+  title: 'Canvas explorations',
   icons: [
     {
       url: '/favicon.ico',

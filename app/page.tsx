@@ -1,8 +1,5 @@
-import Greeting from '@lib/Greeting'
+import Canvas from './Canvas'
 
 export default function Index() {
-  return <Greeting>Hello! 👋</Greeting>
+  return <Canvas />
 }
-
-export const revalidate = 0
-export const dynamic = 'force-dynamic'
